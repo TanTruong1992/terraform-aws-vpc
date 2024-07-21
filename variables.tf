@@ -1,20 +1,16 @@
-variable "project" {
+variable "vpc_cidr_block" {
   type    = string
+  default = "10.0.0.0/16"
 }
 
-variable "vpc_cidr" {
-  type    = string
-}
-
-variable "private_subnets" {
+variable "private_subnet" {
   type    = list(string)
 }
 
-variable "public_subnets" {
+variable "public_subnet" {
   type    = list(string)
 }
 
-variable "database_subnets" {
+variable "availability_zone" {
   type    = list(string)
 }
-
